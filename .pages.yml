@@ -1,0 +1,351 @@
+# Pages CMS config for Chroma Lips
+# Docs: https://pagescms.org/docs/configuration/
+
+
+media:
+  input: img
+  output: img
+  categories: [image]
+  extensions: [jpg, jpeg, png, gif, webp, svg]
+  rename: safe
+
+
+content:
+  - name: events
+    label: Shows
+    type: file
+    path: data/events.json
+    format: json
+    fields:
+      - name: shows
+        label: Shows
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.title} — {fields.date}"
+        fields:
+          - name: date
+            label: Date
+            type: date
+            required: true
+            options:
+              format: yyyy-MM-dd
+          - name: title
+            label: Title / lineup
+            type: string
+            required: true
+          - name: venue
+            label: Venue
+            type: string
+          - name: tickets
+            label: Ticket URL
+            type: string
+            description: DICE or venue ticket link (optional)
+          - name: flyer
+            label: Flyer image
+            type: image
+            description: Optional. Featured on Live for the next upcoming show that has one.
+
+
+  - name: gallery
+    label: Gallery
+    type: file
+    path: data/gallery.json
+    format: json
+    fields:
+      - name: intro
+        label: Intro text
+        type: string
+      - name: photos
+        label: Photos
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.alt}"
+        fields:
+          - name: src
+            label: Image
+            type: image
+            required: true
+          - name: alt
+            label: Alt text
+            type: string
+          - name: size
+            label: Size
+            type: select
+            options:
+              values:
+                - name: ""
+                  label: Normal
+                - name: hero
+                  label: Hero (large)
+                - name: wide
+                  label: Wide
+            description: Layout size in the photo grid.
+
+
+  - name: merch
+    label: Merch
+    type: file
+    path: data/merch.json
+    format: json
+    fields:
+      - name: heading
+        label: Heading
+        type: string
+      - name: blurb
+        label: Description
+        type: text
+        description: Use a line break between sentences if you want.
+      - name: storeLabel
+        label: Store button label
+        type: string
+      - name: items
+        label: Product cards
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.label}"
+        fields:
+          - name: image
+            label: Image
+            type: image
+            required: true
+          - name: alt
+            label: Alt text
+            type: string
+          - name: label
+            label: Accessibility label
+            type: string
+
+
+  - name: social
+    label: Social & links
+    type: file
+    path: data/social.json
+    format: json
+    fields:
+      - name: email
+        label: Booking email
+        type: string
+      - name: bandcampFollowId
+        label: Bandcamp follow ID
+        type: string
+        description: Number in the Bandcamp follow button embed
+      - name: bandcamp
+        label: Bandcamp URL
+        type: string
+      - name: bandcampAlbum
+        label: Bandcamp album URL
+        type: string
+      - name: bandcampMerch
+        label: Bandcamp merch URL
+        type: string
+      - name: spotify
+        label: Spotify URL
+        type: string
+      - name: tidal
+        label: Tidal URL
+        type: string
+      - name: youtube
+        label: YouTube channel URL
+        type: string
+      - name: dice
+        label: DICE artist URL
+        type: string
+      - name: denverDive
+        label: Denver Dive interview URL
+        type: string
+      - name: listen
+        label: Listen page platforms
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.name}"
+        fields:
+          - name: name
+            label: Platform name
+            type: string
+            required: true
+          - name: url
+            label: URL
+            type: string
+            required: true
+          - name: image
+            label: Card image
+            type: image
+          - name: alt
+            label: Image alt text
+            type: string
+
+
+  - name: site
+    label: Site settings
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: bandName
+        label: Band name
+        type: string
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: marquee
+        label: Marquee text
+        type: string
+      - name: copyrightYear
+        label: Copyright year
+        type: number
+      - name: footerNote
+        label: Footer note
+        type: string
+
+
+      - name: home
+        label: Home page
+        type: object
+        fields:
+          - name: heroImage
+            label: Hero image
+            type: image
+          - name: heroAlt
+            label: Hero alt text
+            type: string
+          - name: headline
+            label: Headline
+            type: string
+          - name: bodyHtml
+            label: Body (HTML ok)
+            type: text
+            description: You can use <strong> and <br> if needed.
+
+
+      - name: listen
+        label: Listen page copy
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+          - name: bodyHtml
+            label: Body (HTML ok)
+            type: text
+
+
+      - name: live
+        label: Live page copy
+        type: object
+        fields:
+          - name: intro
+            label: Intro
+            type: string
+          - name: diceButtonLabel
+            label: DICE button label
+            type: string
+          - name: emptyMessage
+            label: No-shows message
+            type: string
+
+
+      - name: videos
+        label: Videos page
+        type: object
+        fields:
+          - name: intro
+            label: Intro
+            type: string
+          - name: channelButtonLabel
+            label: Channel button label
+            type: string
+          - name: cardLabel
+            label: Card label
+            type: string
+          - name: items
+            label: Video cards
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.alt}"
+            fields:
+              - name: image
+                label: Thumbnail
+                type: image
+              - name: alt
+                label: Alt text
+                type: string
+
+
+      - name: about
+        label: About page
+        type: object
+        fields:
+          - name: sections
+            label: Sections
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{fields.heading}"
+            fields:
+              - name: heading
+                label: Heading
+                type: string
+              - name: headingLink
+                label: Heading link (optional)
+                type: object
+                fields:
+                  - name: label
+                    label: Link text
+                    type: string
+                    description: Leave blank for no link in the heading.
+                  - name: url
+                    label: Link URL
+                    type: string
+                  - name: quoted
+                    label: Wrap link in quotes
+                    type: boolean
+              - name: paragraphs
+                label: Paragraphs
+                type: text
+                list: true
+                description: Use **text** for bold.
+
+
+      - name: contact
+        label: Contact page
+        type: object
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+          - name: bookingLabel
+            label: Booking label
+            type: string
+          - name: newsletterLabel
+            label: Newsletter label
+            type: string
+          - name: newsletterPlaceholder
+            label: Email placeholder
+            type: string
+          - name: newsletterButton
+            label: Subscribe button
+            type: string
+          - name: newsletterAction
+            label: Kit.com form URL
+            type: string
+
+
+settings:
+  commit:
+    templates:
+      create: "content: create {path}"
+      update: "content: update {path}"
+      delete: "content: delete {path}"
+      rename: "content: rename {path}"
+      upload: "media: upload {path}"
