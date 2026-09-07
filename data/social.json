@@ -1,0 +1,32 @@
+{
+  "email": "chromalipsband@gmail.com",
+  "bandcampFollowId": "4018381583",
+  "bandcamp": "https://chomalips.bandcamp.com",
+  "bandcampAlbum": "https://chomalips.bandcamp.com/album/chromazone",
+  "bandcampMerch": "https://chomalips.bandcamp.com/merch",
+  "spotify": "https://open.spotify.com/album/0BzsSx3qiLAx34F2xQ74hd",
+  "tidal": "https://tidal.com/search?q=Chroma%20Lips",
+  "youtube": "https://www.youtube.com/@ChromaLipsBand",
+  "dice": "https://dice.fm/artist/chroma-lips-rxd3y",
+  "denverDive": "https://denverdive.com/chroma-lips-talks-debut-album-chromazone-ahead-of-june-22nd-release/",
+  "listen": [
+    {
+      "name": "bandcamp",
+      "url": "https://chomalips.bandcamp.com/album/chromazone",
+      "image": "img/hero.png",
+      "alt": "Chroma Lips"
+    },
+    {
+      "name": "spotify",
+      "url": "https://open.spotify.com/album/0BzsSx3qiLAx34F2xQ74hd",
+      "image": "img/Logo.png",
+      "alt": "chromaZone album art"
+    },
+    {
+      "name": "tidal",
+      "url": "https://tidal.com/search?q=Chroma%20Lips",
+      "image": "img/chromaeditmain-007.jpg",
+      "alt": "Chroma Lips"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "heading": "Official Chroma Lips Merch",
+  "blurb": "Vinyl, tees, and chromaZone goodies — all available through our Bandcamp store.\nDIY made, hand-built vibes.",
+  "storeLabel": "Shop Merch on Bandcamp",
+  "items": [
+    {
+      "image": "img/merch-cassette.jpg",
+      "alt": "chromaZone limited edition neon cassette",
+      "label": "Shop cassette on Bandcamp"
+    },
+    {
+      "image": "img/merch-vinyl.jpg",
+      "alt": "chromaZone limited edition neon green vinyl",
+      "label": "Shop vinyl on Bandcamp"
+    }
+  ]
+}

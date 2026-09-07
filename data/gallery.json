@@ -1,0 +1,21 @@
+{
+  "intro": "ENTER THE ARCHIVE",
+  "photos": [
+    { "src": "img/hero.png", "alt": "Chroma Lips live", "size": "hero" },
+    { "src": "img/Logo.png", "alt": "Chroma Lips logo", "size": "" },
+    { "src": "img/DSC_5982.jpg", "alt": "Band photo", "size": "" },
+    { "src": "img/DSC01416.jpg", "alt": "Band photo", "size": "" },
+    { "src": "img/IMG_20240802_064945_553.jpg", "alt": "Chroma Lips", "size": "wide" },
+    { "src": "img/Dan.jpg", "alt": "Dan", "size": "" },
+    { "src": "img/harry.jpg", "alt": "Harry", "size": "" },
+    { "src": "img/cal.jpg", "alt": "Cal", "size": "" },
+    { "src": "img/Violet.jpg", "alt": "Violet", "size": "" },
+    { "src": "img/AJH00550.jpg", "alt": "Chroma Lips performance", "size": "wide" },
+    { "src": "img/MW107057.jpg", "alt": "Chroma Lips", "size": "" },
+    { "src": "img/Untitled-4222.jpg", "alt": "Chroma Lips", "size": "" },
+    { "src": "img/chromaeditmain-011.jpg", "alt": "Chroma Lips edit", "size": "" },
+    { "src": "img/chromaeditmain-003.jpg", "alt": "Chroma Lips edit", "size": "" },
+    { "src": "img/chromaeditmain-007.jpg", "alt": "Chroma Lips edit", "size": "" },
+    { "src": "img/6-27-show-flyer.png", "alt": "June 27 album release show", "size": "wide" }
+  ]
+}

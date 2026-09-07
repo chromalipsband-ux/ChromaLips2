@@ -1,0 +1,84 @@
+{
+  "bandName": "Chroma Lips",
+  "tagline": "DENVER // KRAUT // GAZE",
+  "marquee": "★ welcome to the chromaZone // out now streaming & physical media ★",
+  "copyrightYear": 2026,
+  "footerNote": "this site is Y2K certified™ · no flash required (we think)",
+  "home": {
+    "heroImage": "img/hero.png",
+    "heroAlt": "Chroma Lips",
+    "headline": "welcome to the chromaZone",
+    "bodyHtml": "Debut album <strong>chromaZone</strong> available everywhere <strong>June 22, 2026</strong>"
+  },
+  "listen": {
+    "heading": "chromaZone — debut album",
+    "bodyHtml": "Transmitting from a universe of texture and motion. Ten tracks of motorik-driven momentum.<br>Available everywhere <strong>June 22, 2026</strong>"
+  },
+  "live": {
+    "intro": "All upcoming dates & tickets on DICE:",
+    "diceButtonLabel": "★ get tickets on DICE ★",
+    "emptyMessage": "No upcoming shows — check back soon (or grab tickets on DICE)."
+  },
+  "videos": {
+    "intro": "Music videos, live footage, and more on our YouTube channel.",
+    "channelButtonLabel": "YouTube Channel",
+    "cardLabel": "Watch on YouTube",
+    "items": [
+      {
+        "image": "img/hero.png",
+        "alt": "Chroma Lips video thumbnail"
+      },
+      {
+        "image": "img/chromaeditmain-011.jpg",
+        "alt": "Chroma Lips"
+      },
+      {
+        "image": "img/AJH00550.jpg",
+        "alt": "Chroma Lips live"
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "heading": "About the artist:",
+        "headingLink": {
+          "quoted": false
+        },
+        "paragraphs": [
+          "Denver-based Chroma Lips make music built from layered guitars and synth, with dual male & female vocals over a driving rhythm section. The group takes a DIY approach, writing, recording, and creating artwork from their hand-built home studio. Motivated by a passion for travel and a refusal to settle into the predictable, with the release of chromaZone, have laid the groundwork for a project built to stay in motion."
+        ]
+      },
+      {
+        "heading": "Chroma Lips debut album:",
+        "headingLink": {
+          "label": "chromaZone",
+          "url": "https://chomalips.bandcamp.com/album/chromazone",
+          "quoted": true
+        },
+        "paragraphs": [
+          "Transmitting from a universe of texture and motion, a sonic atmosphere of guitars and synthesizers blur into one as the record brings you into a steady, motorik-driven momentum.",
+          "Self-produced and recorded, fronting members Harrison Edwards and Violet De Vries fashioned the record in their hand-built DIY studio.",
+          "Across ten tracks, chromaZone moves through desert highways, derelict cityscapes, electric rock clubs, and late-night reflection.",
+          "**Available everywhere June 22, 2026**"
+        ]
+      },
+      {
+        "heading": "Denver Dive Interview:",
+        "headingLink": {
+          "label": "Read here",
+          "url": "https://denverdive.com/chroma-lips-talks-debut-album-chromazone-ahead-of-june-22nd-release/",
+          "quoted": false
+        }
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact",
+    "bookingLabel": "Booking:",
+    "newsletterLabel": "★ join the chromaZone ★",
+    "newsletterPlaceholder": "Email updates",
+    "newsletterButton": "Subscribe",
+    "newsletterAction": "https://app.kit.com/forms/9458376/subscriptions"
+  }
+}

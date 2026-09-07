@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chroma Lips live shows and tour dates in Denver.">
+  <title>LIVE — Chroma Lips</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="48x48">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="bc-follow">
+      <iframe scrolling="no" title="Follow on Bandcamp" src=""></iframe>
+    </div>
+
+    <div class="logo-block">
+      <h1 class="site-title">
+        <a class="site-title-link" href="index.html" aria-label="Chroma Lips">
+          <span class="site-title-glitch site-title-glitch--cyan" aria-hidden="true"></span>
+          <span class="site-title-glitch site-title-glitch--pink" aria-hidden="true"></span>
+          <span class="site-title-chroma" aria-hidden="true"></span>
+          <img class="site-title-img" src="img/chroma-lips-demo-header.png" width="1391" height="174" alt="Chroma Lips">
+        </a>
+      </h1>
+      <p class="tagline"></p>
+    </div>
+
+    <div class="marquee-wrap">
+      <marquee behavior="scroll" direction="left" scrollamount="4"></marquee>
+    </div>
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" class="nav-btn">home</a>
+      <a href="listen.html" class="nav-btn">listen</a>
+      <a href="merch.html" class="nav-btn">merch</a>
+      <a href="live.html" class="nav-btn is-active">live</a>
+      <a href="videos.html" class="nav-btn">videos</a>
+      <a href="gallery.html" class="nav-btn">gallery</a>
+      <a href="about.html" class="nav-btn">about</a>
+      <a href="contact.html" class="nav-btn">contact</a>
+    </nav>
+  </header>
+
+  <main class="page-section">
+    <div class="container">
+      <div class="retro-panel" style="text-align:center;">
+        <p data-live-intro></p>
+        <div class="btn-row">
+          <a href="#" target="_blank" rel="noopener" class="retro-btn retro-btn--large" data-live-dice></a>
+        </div>
+      </div>
+
+      <ul id="show-list" class="show-list" aria-live="polite">
+        <li class="show-list-status">Loading shows...</li>
+      </ul>
+
+      <a id="featured-flyer" class="show-card show-card--after-list" hidden target="_blank" rel="noopener">
+        <img src="" alt="">
+      </a>
+
+      <div id="past-shows" class="past-shows" hidden>
+        <hr class="hr-glow">
+        <h2 class="section-title">Previous shows</h2>
+        <ul id="past-show-list" class="show-list show-list--past"></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="hit-counter">visitors: <span id="hit-count">--------</span></div>
+    <p></p>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/shows.js"></script>
+  <script src="js/hit-counter.js"></script>
+</body>
+</html>

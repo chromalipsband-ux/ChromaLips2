@@ -1,0 +1,14 @@
+# Cloudflare Pages: always revalidate editable content + loaders
+# https://developers.cloudflare.com/pages/configuration/headers/
+
+/data/*
+  Cache-Control: public, max-age=0, must-revalidate
+  CDN-Cache-Control: no-store
+
+/js/content.js
+  Cache-Control: public, max-age=0, must-revalidate
+  CDN-Cache-Control: no-store
+
+/js/shows.js
+  Cache-Control: public, max-age=0, must-revalidate
+  CDN-Cache-Control: no-store
